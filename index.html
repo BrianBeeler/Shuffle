@@ -6,30 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
+    <script src="app.js"></script>
 </head>
 <body>
     <main>
         <div id="user-controls">
             <div class="row">
                 <label>Number of Dots</label>
-                <input type="number">
+                <input type="number" id='num-dots'>
             </div>
         
             <div class="row">
                 <label>Interval of Dot numbers</label>
-                <input type="number">
+                <input type="number" id='interval-dots'>
             </div>
      
             <br>
             <div class="row">
                 <label>Click to reset</label>
-                <button>Reset</button>
+                <button onclick="resetDots()">Reset</button>
             </div>
             <br>
 
             <div class="row">
                 <label>Click to Shuffle</label>
-                <button>Shuffle</button>
+                <button onclick="shuffleDots()">Shuffle</button>
             </div>
      
         </div>
@@ -38,6 +39,6 @@
         </div>
 
     </main>
-    <script src="app.js"></script>
+  
 </body>
 </html>
